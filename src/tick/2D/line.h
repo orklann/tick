@@ -1,4 +1,4 @@
-#ifndef ARK_Line_h
-#define ARK_Line_h
+#ifndef TICK_2D_LINE_h
+#define TICK_2D_LINE_h
 void MESSAGE();
 #endif

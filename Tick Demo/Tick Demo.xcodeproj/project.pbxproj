@@ -13,7 +13,7 @@
 		9303DBD01F4C6E4B0053B58F /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9303DBCF1F4C6E4B0053B58F /* SDL2.framework */; };
 		9303DBD11F4C6E510053B58F /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9303DBCF1F4C6E4B0053B58F /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9303DBD71F4C6FC20053B58F /* GLUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9303DBD51F4C6FC20053B58F /* GLUtil.cpp */; };
-		933838391F4C74680027EEA2 /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 933838371F4C74680027EEA2 /* line.cpp */; };
+		93F127F11F4C78510016C18A /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93F127EF1F4C78510016C18A /* line.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +38,8 @@
 		9303DBCF1F4C6E4B0053B58F /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 		9303DBD51F4C6FC20053B58F /* GLUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLUtil.cpp; sourceTree = "<group>"; };
 		9303DBD61F4C6FC20053B58F /* GLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUtil.h; sourceTree = "<group>"; };
-		933838371F4C74680027EEA2 /* line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = line.cpp; sourceTree = "<group>"; };
-		933838381F4C74680027EEA2 /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line.h; sourceTree = "<group>"; };
+		93F127EF1F4C78510016C18A /* line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = line.cpp; sourceTree = "<group>"; };
+		93F127F01F4C78510016C18A /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		9303DBA81F4C6CCC0053B58F = {
 			isa = PBXGroup;
 			children = (
-				933838351F4C74680027EEA2 /* tick */,
+				93F127ED1F4C78510016C18A /* tick */,
 				9303DBD41F4C6FB30053B58F /* libs */,
 				9303DBC81F4C6D5E0053B58F /* Frameworks */,
 				9303DBB31F4C6CCC0053B58F /* Tick Demo */,
@@ -110,19 +110,20 @@
 			name = libs;
 			sourceTree = "<group>";
 		};
-		933838351F4C74680027EEA2 /* tick */ = {
+		93F127ED1F4C78510016C18A /* tick */ = {
 			isa = PBXGroup;
 			children = (
-				933838361F4C74680027EEA2 /* 2D */,
+				93F127EE1F4C78510016C18A /* 2D */,
 			);
-			path = tick;
+			name = tick;
+			path = ../src/tick;
 			sourceTree = "<group>";
 		};
-		933838361F4C74680027EEA2 /* 2D */ = {
+		93F127EE1F4C78510016C18A /* 2D */ = {
 			isa = PBXGroup;
 			children = (
-				933838371F4C74680027EEA2 /* line.cpp */,
-				933838381F4C74680027EEA2 /* line.h */,
+				93F127EF1F4C78510016C18A /* line.cpp */,
+				93F127F01F4C78510016C18A /* line.h */,
 			);
 			path = 2D;
 			sourceTree = "<group>";
@@ -199,7 +200,7 @@
 			files = (
 				9303DBD71F4C6FC20053B58F /* GLUtil.cpp in Sources */,
 				9303DBB91F4C6CCC0053B58F /* main.cpp in Sources */,
-				933838391F4C74680027EEA2 /* line.cpp in Sources */,
+				93F127F11F4C78510016C18A /* line.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
