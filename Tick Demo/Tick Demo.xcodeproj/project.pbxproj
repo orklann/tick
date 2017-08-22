@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9303DBB91F4C6CCC0053B58F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9303DBB81F4C6CCC0053B58F /* main.cpp */; };
+		9303DBBE1F4C6CCC0053B58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9303DBBD1F4C6CCC0053B58F /* Assets.xcassets */; };
+		9303DBCC1F4C6D800053B58F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9303DBCB1F4C6D800053B58F /* OpenGL.framework */; };
+		9303DBD01F4C6E4B0053B58F /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9303DBCF1F4C6E4B0053B58F /* SDL2.framework */; };
+		9303DBD11F4C6E510053B58F /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9303DBCF1F4C6E4B0053B58F /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9303DBD71F4C6FC20053B58F /* GLUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9303DBD51F4C6FC20053B58F /* GLUtil.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9303DBCD1F4C6E2C0053B58F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9303DBD11F4C6E510053B58F /* SDL2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9303DBB11F4C6CCC0053B58F /* Tick Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9303DBB81F4C6CCC0053B58F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9303DBBD1F4C6CCC0053B58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9303DBC21F4C6CCC0053B58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9303DBCB1F4C6D800053B58F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9303DBCF1F4C6E4B0053B58F /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		9303DBD51F4C6FC20053B58F /* GLUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLUtil.cpp; sourceTree = "<group>"; };
+		9303DBD61F4C6FC20053B58F /* GLUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUtil.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9303DBAE1F4C6CCC0053B58F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9303DBCC1F4C6D800053B58F /* OpenGL.framework in Frameworks */,
+				9303DBD01F4C6E4B0053B58F /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9303DBA81F4C6CCC0053B58F = {
+			isa = PBXGroup;
+			children = (
+				9303DBD41F4C6FB30053B58F /* libs */,
+				9303DBC81F4C6D5E0053B58F /* Frameworks */,
+				9303DBB31F4C6CCC0053B58F /* Tick Demo */,
+				9303DBB21F4C6CCC0053B58F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9303DBB21F4C6CCC0053B58F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9303DBB11F4C6CCC0053B58F /* Tick Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9303DBB31F4C6CCC0053B58F /* Tick Demo */ = {
+			isa = PBXGroup;
+			children = (
+				9303DBBD1F4C6CCC0053B58F /* Assets.xcassets */,
+				9303DBC21F4C6CCC0053B58F /* Info.plist */,
+				9303DBB71F4C6CCC0053B58F /* Supporting Files */,
+			);
+			path = "Tick Demo";
+			sourceTree = "<group>";
+		};
+		9303DBB71F4C6CCC0053B58F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9303DBB81F4C6CCC0053B58F /* main.cpp */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9303DBC81F4C6D5E0053B58F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9303DBCF1F4C6E4B0053B58F /* SDL2.framework */,
+				9303DBCB1F4C6D800053B58F /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9303DBD41F4C6FB30053B58F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				9303DBD51F4C6FC20053B58F /* GLUtil.cpp */,
+				9303DBD61F4C6FC20053B58F /* GLUtil.h */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9303DBB01F4C6CCC0053B58F /* Tick Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9303DBC51F4C6CCC0053B58F /* Build configuration list for PBXNativeTarget "Tick Demo" */;
+			buildPhases = (
+				9303DBAD1F4C6CCC0053B58F /* Sources */,
+				9303DBAE1F4C6CCC0053B58F /* Frameworks */,
+				9303DBAF1F4C6CCC0053B58F /* Resources */,
+				9303DBCD1F4C6E2C0053B58F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tick Demo";
+			productName = "Tick Demo";
+			productReference = 9303DBB11F4C6CCC0053B58F /* Tick Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9303DBA91F4C6CCC0053B58F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Aaron Elkins";
+				TargetAttributes = {
+					9303DBB01F4C6CCC0053B58F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9303DBAC1F4C6CCC0053B58F /* Build configuration list for PBXProject "Tick Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9303DBA81F4C6CCC0053B58F;
+			productRefGroup = 9303DBB21F4C6CCC0053B58F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9303DBB01F4C6CCC0053B58F /* Tick Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9303DBAF1F4C6CCC0053B58F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9303DBBE1F4C6CCC0053B58F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9303DBAD1F4C6CCC0053B58F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9303DBD71F4C6FC20053B58F /* GLUtil.cpp in Sources */,
+				9303DBB91F4C6CCC0053B58F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9303DBC31F4C6CCC0053B58F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9303DBC41F4C6CCC0053B58F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9303DBC61F4C6CCC0053B58F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../libs",
+					"$(PROJECT_DIR)/../src",
+				);
+				INFOPLIST_FILE = "Tick Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pixelegg.Tick-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../libs";
+			};
+			name = Debug;
+		};
+		9303DBC71F4C6CCC0053B58F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../libs",
+					"$(PROJECT_DIR)/../src",
+				);
+				INFOPLIST_FILE = "Tick Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.pixelegg.Tick-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../libs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9303DBAC1F4C6CCC0053B58F /* Build configuration list for PBXProject "Tick Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9303DBC31F4C6CCC0053B58F /* Debug */,
+				9303DBC41F4C6CCC0053B58F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9303DBC51F4C6CCC0053B58F /* Build configuration list for PBXNativeTarget "Tick Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9303DBC61F4C6CCC0053B58F /* Debug */,
+				9303DBC71F4C6CCC0053B58F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9303DBA91F4C6CCC0053B58F /* Project object */;
+}
