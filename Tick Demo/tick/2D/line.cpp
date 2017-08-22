@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "line.h"
 
 void MESSAGE() {

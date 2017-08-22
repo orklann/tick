@@ -321,6 +321,7 @@ void close(){
 }
 
 int main(int argc, char* args[]){
+    MESSAGE();
     //Start up SDL and create window
     if(!init()){
         printf( "Failed to initialize!\n" );
